@@ -2,7 +2,6 @@
 
 namespace LI\VCFJ;
 
-// Block direct access.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
