@@ -5,13 +5,13 @@ on:
       - development
 jobs:
   phpcs:
-      name: WPCS
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v3
-        - name: Coding Standards for WordPress
-          uses: 10up/wpcs-action@develop
-          with:
-            enable_warnings: true
-            paths: 'src'
-            standard: 'WordPress-Core'
+    name: WPCS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Coding Standards for WordPress
+        uses: 10up/wpcs-action@develop
+        with:
+          enable_warnings: true
+          paths: "src"
+          standard: "WordPress-Core"
